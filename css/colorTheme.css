@@ -1,0 +1,19 @@
+.color-themes {
+  display:flex;
+  gap:2rem;
+  margin-left: 2rem;
+  margin-top:2px;
+}
+.button-color {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border-style: double;
+    border: 10px double #333;
+    cursor:pointer;
+    transition: .3s;
+}
+.button-color:hover {
+  transform:translateY(10px);
+  transition: .3s;
+}

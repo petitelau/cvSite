@@ -1,0 +1,15 @@
+@media(max-width: 90em) {
+    html {
+        font-size: 50%;
+    }
+} 
+@media(max-width: 80em) {
+    html {
+        font-size: 45%;
+    }
+    .bars-container{
+        height: 180rem;
+        transform: translate(40rem, -40rem) rotate(135deg);
+    }
+
+}   
