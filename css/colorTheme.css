@@ -1,19 +1,43 @@
 .color-themes {
   display:flex;
   gap:2rem;
-  margin-left: 2rem;
+  margin-left: 0rem;
   margin-top:2px;
+  overflow: hidden;
+  transition:0.5s;
 }
 .button-color {
+    margin-left: -7rem;
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
     border-style: double;
     border: 10px double #333;
     cursor:pointer;
-    transition: .3s;
+    transition: 0.5s;
 }
 .button-color:hover {
-  transform:translateY(10px);
+  transform:scale(1.1);
   transition: .3s;
+}
+
+.colors-bar-container{
+  width: 5rem;
+  height: 5rem;
+  margin-top: 2px;
+  margin-left: 1px;
+  color: #eee;
+  font-weight: 600;
+  font-size: 2.4rem; 
+  background: linear-gradient(var(--blue-base), var(--green-base), var(--pink-base)) ;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(0.9);
+  cursor: pointer;
+  z-index:99;
+}
+
+.colors-bar-container:hover {
+    filter: none;
 }

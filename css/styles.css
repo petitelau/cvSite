@@ -15,12 +15,12 @@ body{
     --red-base: hsl(1, 62%, 35%);
     --red-mittel: hsl(1, 82%, 20%);
     --red-dark: hsl(1, 83%, 14%);
-    --pink-base: hsl(309, 62%, 35%);
-    --pink-mittel: hsl(309, 82%, 20%);
-    --pink-dark: hsl(309, 83%, 14%);
-    --violet-base: hsl(277, 62%, 35%);
-    --violet-mittel: hsl(277, 82%, 20%);
-    --violet-dark: hsl(277, 83%, 14%);
+    --pink-base: hsl(320, 62%, 35%);
+    --pink-mittel: hsl(320, 82%, 20%);
+    --pink-dark: hsl(320, 83%, 14%);
+    --violet-base: hsl(25, 62%, 35%);
+    --violet-mittel: hsl(25, 82%, 20%);
+    --violet-dark: hsl(25, 83%, 14%);
     --green-light: #9cc891;
 }
 

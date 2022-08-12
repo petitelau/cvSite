@@ -25,6 +25,20 @@ const ColorView = (containerEl, elements, subElements,colors)=> {
         allColors.push(buttonEl)
     })
    
+    const colorsContainer = document.createElement('DIV');
+    colorsContainer.classList.add('colors-bar-container');
+    colorsContainer.innerHTML= "&#10140;";
+    colorsContainer.onclick = ()=> {
+
+        allColors.forEach(el => 
+           el.style.marginLeft = (el.style.marginLeft == 'unset') ? '-7rem' : 'unset'
+           );
+    }
+
+    containerEl.appendChild(colorsContainer);
+
     allColors.forEach(c => containerEl.appendChild(c));
+
+
 
 }
