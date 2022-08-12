@@ -21,7 +21,7 @@
 }
 
 .diploma-img {
-    width:var(--card-width);
+   /* width:var(--card-width);*/
     background-color: #555;
     height:50%;
     display: flex;
@@ -30,7 +30,16 @@
     background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
 }
 .diploma-txt {
-   background-color: #ccc;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   font-size: 1.8rem;
+   padding: 2rem;
+   color: #eee;
+
+   background-color: #444;
+   background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+
    width:var(--card-width);
    height:50%;
 }

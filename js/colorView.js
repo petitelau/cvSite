@@ -36,9 +36,10 @@ const ColorView = (containerEl, elements, subElements,colors)=> {
     }
 
     containerEl.appendChild(colorsContainer);
-
     allColors.forEach(c => containerEl.appendChild(c));
 
 
+    //at the beginning
+    changeTheme('blue');
 
 }
