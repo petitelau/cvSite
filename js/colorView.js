@@ -1,18 +1,16 @@
 export {ColorView}
 
-const ColorView = (containerEl, elements, subElements,colors)=> {
+const ColorView = (containerEl, elements,colors)=> {
 
     const allColors = [];
     Array.from(elements).forEach(e=>console.log(e));
 
     const changeTheme = (c)=> {
-        Array.from(elements).forEach(e=>
-        e.style.backgroundImage= `url("../img/black-orchid.png"), 
-        radial-gradient(var(--${c}-base),var(--${c}-base),var(--${c}-mittel),var(--${c}-dark))` );
-      
-        Array.from(subElements).forEach(e=> {
-            e.style.backgroundColor= `var(--${c}-base)`;    
-        })
+        
+        document.body.style.setProperty('--color-base',`var(--${c}-base)`);
+        document.body.style.setProperty('--color-mittel',`var(--${c}-mittel)`);
+        document.body.style.setProperty('--color-dark',`var(--${c}-dark)`);
+       
     }
 
     colors.forEach(buttonColor => {

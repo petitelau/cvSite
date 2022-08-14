@@ -28,7 +28,8 @@ const HeroView = (canvas, container ) => {
     
     const drawLogo = () => {
         return new Promise((res, rej) =>{
-        container.style.backgroundImage = 'url("../img/light-wool.png")'
+            container.style.background= "#222";
+        //container.style.backgroundImage = 'url("../img/light-wool.png")'
         let idx= 0;
         let y = -1;
         let direction =1;
@@ -52,7 +53,6 @@ const HeroView = (canvas, container ) => {
                 direction=1;
                 y=-1;
                 once++;
-                console.log(once)
                 if (once>3) {
                     clearInterval(twiceTimer);
                     clearInterval(timer)

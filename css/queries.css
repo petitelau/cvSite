@@ -2,6 +2,18 @@
     html {
         font-size: 50%;
     }
+    .jobs-container:after {
+        content: '';
+        position: absolute;
+        top: 20rem;
+        right: 15rem;
+        width: 55rem;
+        height: 0.2rem;
+        background-color: #555;
+        background-image:  url("../img/dark-mosaic.png");
+        opacity: 0.4;
+       
+    }
 } 
 @media(max-width: 80em) {
     html {

@@ -5,8 +5,8 @@ import { ColorView} from "./colorView.js";
 const setTheme= () => {
     const container = document.querySelector('.color-themes');
     const element = document.querySelectorAll('.main-color');
-    const subElement = document.querySelectorAll('.main-color-mitte');
-    ColorView(container, element, subElement, ['blue', 'green', 'pink', 'red', 'violet']);
+   
+    ColorView(container, element,  ['blue', 'green', 'pink', 'red', 'violet']);
 }
   
 
@@ -23,7 +23,12 @@ heroSection();
 setTheme();
 
 
-
+document.querySelector('.job-card-desc').onmouseleave = ()=> {
+    document.querySelector('.job-card-desc').scrollTop = 0;
+}
+document.querySelector('.job-card-desc2').onmouseleave = ()=> {
+    document.querySelector('.job-card-desc2').scrollTop = 0;
+}
 
 
 
