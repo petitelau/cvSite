@@ -6,7 +6,7 @@ const setTheme= () => {
     const container = document.querySelector('.color-themes');
     const element = document.querySelectorAll('.main-color');
    
-    ColorView(container, element,  ['blue', 'green', 'pink', 'red', 'violet']);
+    ColorView(container, element,  ['blue', 'green', 'pink', 'red']);
 }
   
 

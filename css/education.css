@@ -20,7 +20,7 @@
 }
 
 .diploma-img {
-   /* width:var(--card-width);*/
+   overflow: hidden;
     background-color: #555;
     height:50%;
     display: flex;
@@ -68,6 +68,16 @@
     transform: scale(1.5);
     transition: 0.5s;
 }
+.dipl-vertical {
+    width:16rem;
+    height:80%;
+    transition: 0.5s;
+}
+.dipl-vertical:hover {
+    transform: scale(1.7);
+    transition: 0.5s;
+}
+
 
 .color-base-bk {
     background-color: var(--color-base);

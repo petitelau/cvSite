@@ -81,11 +81,15 @@ const HeroView = (canvas, container ) => {
     }
     
     let i=0;
-    setInterval(() => {
+    let animTimer = setInterval(() => {
         (i%2)==0 ? drawLogoAnim():drawMe();
        i++;
     }, 8500);
     
     drawMe();
+
+    setTimeout(()=>{
+        clearInterval(animTimer);
+    }, 1000*60*3)
 
 }
