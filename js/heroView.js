@@ -90,6 +90,8 @@ const HeroView = (canvas, container ) => {
 
     setTimeout(()=>{
         clearInterval(animTimer);
-    }, 1000*60*3)
+        console.log('clear all intervals');
+        drawMe();
+    }, 1000*60*2)
 
 }
