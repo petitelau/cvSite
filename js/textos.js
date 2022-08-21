@@ -55,9 +55,10 @@ Configuration and Implementation of BMC Software tools to monitor the servers of
 
 
 const getSkillRow = (text) => {
+ const id = text.split(' ')[0];   
 return `<div class="skill-row">
             <p class="skill-name-txt">${text}</p>
-            <div class="skill-range-cont"><div class="skill-range"></div></div>
+            <div class="skill-range-cont"><div id=${id} class="skill-range"></div></div>
         </div>`;
 }
 
@@ -65,7 +66,7 @@ export const skillsFE = [];
 ['HTML / CSS', 'JavaScript ES6','React','Angular' ].forEach(t=> skillsFE.push(getSkillRow(t)));
 
 export const skillsOther = [];
-['ORACLE / SQL', 'MongoDB','Maven','Git','TeamCity', 'SonarQ', 'MyEclipse', 'IntelliJ', 'Agile' ].forEach(t=> skillsOther.push(getSkillRow(t)));
+['Oracle / SQL', 'MongoDB','Maven','Git','TeamCity', 'SonarQ', 'MyEclipse', 'IntelliJ', 'Agile' ].forEach(t=> skillsOther.push(getSkillRow(t)));
 
 export const skillsBE = [];
 ['Java', 'Hibernate','Spring','NodeJs'].forEach(t=>skillsBE.push(getSkillRow(t)));

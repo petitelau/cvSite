@@ -11,8 +11,10 @@
         height: 0.2rem;
         background-color: #555;
         background-image:  url("../img/dark-mosaic.png");
-        opacity: 0.4;
-       
+        opacity: 0.4;  
+    }
+    .skill-range-cont{
+        width: 30rem;
     }
 } 
 @media(max-width: 80em) {
@@ -22,6 +24,9 @@
     .bars-container{
         height: 180rem;
         transform: translate(40rem, -40rem) rotate(135deg);
+    }
+    .skill-range-cont{
+        width: 30rem;
     }
 
 }   

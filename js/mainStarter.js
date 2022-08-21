@@ -12,22 +12,23 @@ const setText =()=> {
 
     //education
 
-    document.querySelectorAll('.diploma-txt')[0].innerHTML = text.diploma1;
-    document.querySelectorAll('.diploma-txt')[1].innerHTML = text.diploma2;
-    document.querySelectorAll('.diploma-txt')[2].innerHTML = text.diploma3;
+    const edu =  document.querySelectorAll('.diploma-txt');
+    edu[0].innerHTML = text.diploma1;
+    edu[1].innerHTML = text.diploma2;
+    edu[2].innerHTML = text.diploma3;
 
 
     // jobs
-    document.querySelectorAll('.job-desc')[0].innerHTML = text.job1;
-    document.querySelectorAll('.job-desc')[1].innerHTML = text.job2;
-    document.querySelectorAll('.job-desc')[2].innerHTML = text.job3;
+    const jobs = document.querySelectorAll('.job-desc');
+    jobs[0].innerHTML = text.job1;
+    jobs[1].innerHTML = text.job2;
+    jobs[2].innerHTML = text.job3;
 
     // skills
- 
-    document.querySelectorAll('.skill-name')[0].innerHTML = text.skillsFE.join(' ');
-    document.querySelectorAll('.skill-name')[1].innerHTML = text.skillsOther.join(' ');
-    document.querySelectorAll('.skill-name')[2].innerHTML = text.skillsBE.join(' ');
-
+    const skills = document.querySelectorAll('.skill-name');
+    skills[0].innerHTML = text.skillsFE.join(' ');
+    skills[1].innerHTML = text.skillsOther.join(' ');
+    skills[2].innerHTML = text.skillsBE.join(' ');
 
 }
 
@@ -56,11 +57,43 @@ const setJobEv = ()=>{
     }
 }
 
+const setPortfolio = ()=> {
+    const htmlElements = ['<div class="title title-portfolio">Portfolio</div>'];
+    const snapshots = [];
+    
+    snapshots.push('img/snapshots/blacklist.png');
+    snapshots.push('img/snapshots/Colors.png');
+    snapshots.push('img/snapshots/icosPlusGraphs.png');
+    snapshots.push('img/snapshots/itSiteCheer.png');
+    snapshots.push('img/snapshots/post-it.png');
+    snapshots.push('img/snapshots/dashboard.png');
+    snapshots.push('img/snapshots/dashboard2.png');
+    snapshots.push('img/snapshots/souvenirDvd.png');
+    snapshots.push('img/snapshots/souvenirHome.png');
+    snapshots.push('img/snapshots/cosCards.png');
+    snapshots.push('img/snapshots/souvenirCheer.png');
+    snapshots.push('img/snapshots/itSiteDipl.png');
+    snapshots.push('img/snapshots/months.png');
+    snapshots.push('img/snapshots/playground.png');
+    
+    snapshots.forEach(s=>{
+        let id = s.replace('img/snapshots/','');
+        id = id.replace('.png', '');
+
+        htmlElements.push(`<div id="${id}" class="snapshot-cont"><img class="snapshot" src="${s}" /></div>`);
+    } );
+
+    const p =document.querySelector('.portfolio-container');
+  
+    p.innerHTML = htmlElements.join(' ');
+}
+
 
 setText();
 heroSection();
 setTheme();
 setJobEv();
+setPortfolio();
 
 
 
