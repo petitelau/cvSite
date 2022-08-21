@@ -41,6 +41,17 @@ const setTheme= () => {
   
 
 const heroSection = ()=> {
+
+    document.querySelector('.hero-button1').onclick = ()=> {
+        window.open('img/cv2022_5.pdf', '_blank', 'fullscreen=yes');
+    }
+
+    document.querySelector('.hero-button2').onclick = ()=> {
+        window.open('mailto:laura.gomez.2008@gmail.com');
+    }
+
+    
+
     const container = document.querySelector('.canvas-container');
     const canvas = document.getElementById('hero-canvas');
     
