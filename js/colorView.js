@@ -1,9 +1,8 @@
 export {ColorView}
 
-const ColorView = (containerEl, elements,colors)=> {
+const ColorView = (containerEl,colors)=> {
 
     const allColors = [];
-    Array.from(elements).forEach(e=>console.log(e));
 
     const changeTheme = (c)=> {
         

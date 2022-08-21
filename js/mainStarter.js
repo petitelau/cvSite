@@ -34,16 +34,16 @@ const setText =()=> {
 
 const setTheme= () => {
     const container = document.querySelector('.color-themes');
-    const element = document.querySelectorAll('.main-color');
    
-    ColorView(container, element,  ['blue', 'green', 'pink', 'red']);
+   
+    ColorView(container,  ['blue', 'green', 'pink', 'red']);
 }
   
 
 const heroSection = ()=> {
 
     document.querySelector('.hero-button1').onclick = ()=> {
-        window.open('img/cv2022_5.pdf', '_blank', 'fullscreen=yes');
+        window.open('img/cv2022_5.pdf');
     }
 
     document.querySelector('.hero-button2').onclick = ()=> {
