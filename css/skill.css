@@ -51,7 +51,7 @@
 }
 
 .skill-name-txt {
-    min-width: 20rem;
+    min-width: 15rem;
 }
 
 
@@ -71,7 +71,7 @@
 
 .skill-range-cont{
     height: 15px;
-    width: 40rem;
+    width: 28rem;
     background-color: #aaa;
 }
 .skill-range {
