@@ -108,6 +108,15 @@ setPortfolio();
 
 
 
+const svg =document.querySelector('.container-svg');
+let i = 1;
+setInterval(()=>{
+    if (i==3) i=1; 
+    svg.classList.remove(`svg-rotate${i+1}`);
+    svg.classList.add(`svg-rotate${i}`);
+    i++;
+    console.log('start interval svg');
+},1000*45)
 
 
 

@@ -1,0 +1,142 @@
+.person-container {
+    height: 100rem;
+}
+.flower-container {
+    display: grid;
+    grid-template-columns: 40rem 40rem 40rem;
+    grid-template-rows: 8rem 30rem 30rem 30rem;
+    justify-content: center;
+    align-content: center;
+    background-color: #eee;
+    background-image: url(../img/light-aluminum.png);
+    justify-items: center;
+    padding: 3rem;
+}
+
+.petal {
+    display: flex;
+    width: 40rem;
+   
+}
+.petal:nth-child(2) {
+    justify-content: end;
+    transform: rotate(-50deg) translate(-50px, 70px);
+}
+
+.petal:nth-child(2)::before {
+    content: "";
+    width: 20rem;
+    height: 60rem;
+    background-color: var(--color-base);
+    border-radius: 80px;
+    box-shadow: -1rem 20px 10px 0.7px rgb(0 0 0 / 50%);
+    
+}
+
+.petal:nth-child(10) {
+    justify-content: start;
+    transform: rotate(-50deg) translate(50px, -300px);
+}
+.petal:nth-child(10)::before {
+    content: "";
+    width: 20rem;
+    height: 60rem;
+    background-color: var(--color-mittel);
+    border-radius: 80px;
+    box-shadow: -1rem 10px 10px 0.7px rgb(0 0 0 / 50%);
+}
+
+
+.petal:nth-child(6) {
+    align-items: center;
+    justify-content: center;
+    z-index:99;
+}
+
+.container-svg {
+    width: 25rem;
+    height: 25rem;
+    background: radial-gradient(var(--color-base),var(--color-base),#eee, #fff);
+    border-radius: 50%;
+    transform: scale(1.2) rotate(-10deg);
+    
+}
+.svg-rotate1 {
+    transform: scale(1.2) rotate(-350deg);
+    transition: 40s;
+}
+.svg-rotate2 {
+    transform: scale(1.2) rotate(-1deg);
+}
+
+.container-svg:hover {
+    transform: scale(1.2) rotate(-350deg);
+    transition: 40s;
+}
+
+svg {
+    width: inherit;
+    height: inherit;
+   
+}
+text {
+    color: #ccc;
+    transform: translate(20%,20%);
+}
+
+.petal:nth-child(3) {
+    justify-content: center;
+}
+.petal:nth-child(3)::before {
+    content: "";
+    width: 20rem;
+    height: 60rem;
+    background-color: var(--color-dark);
+    border-radius: 80px;
+    z-index: 1;
+    box-shadow: -1rem 20px 10px 0.7px rgb(0 0 0 / 50%);
+}
+
+.petal:nth-child(4) {
+    justify-content: start;
+    transform: rotate(50deg) translate(70px, 55px);
+}
+
+.petal:nth-child(4)::before {
+    content: "";
+    width: 20rem;
+    height: 60rem;
+    background-color: var(--color-mittel);
+    border-radius: 80px;
+    box-shadow: -1rem 20px 10px 0.7px rgb(0 0 0 / 50%);
+
+}
+
+.petal:nth-child(9) {
+    justify-content: center;
+    transform: translateY(-20rem);
+}
+.petal:nth-child(9)::before {
+    content: "";
+    width: 20rem;
+    height: 50rem;
+    background-color: var(--color-base);
+    border-radius: 80px;
+    box-shadow: -1rem 10px 10px 0.7px rgb(0 0 0 / 50%);
+
+}
+.petal:nth-child(8) {
+    justify-content: end;
+    transform: rotate(50deg) translate(-55px, -40rem);
+
+}
+
+.petal:nth-child(8)::before {
+    content: "";
+    width: 20rem;
+    height: 60rem;
+    background-color: var(--color-dark);
+    border-radius: 80px;
+    box-shadow: -1rem 10px 10px 0.7px rgb(0 0 0 / 50%);
+
+}
