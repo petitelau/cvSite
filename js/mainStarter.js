@@ -105,7 +105,8 @@ const setFlower = ()=> {
     const container = document.querySelector('.flower-container');
 
     FlowerView(container);
-
+    const petals = document.querySelectorAll('.petal-ins');
+    const bkgImg = ["none","url('../img/45-degree-fabric-light.png')"];
 
     const svg =document.querySelector('.container-svg');
     let i = 1;
@@ -113,8 +114,22 @@ const setFlower = ()=> {
         if (i==3) i=1; 
         svg.classList.remove(`svg-rotate${i+1}`);
         svg.classList.add(`svg-rotate${i}`);
+       
+        console.log('start interval svg' + i);
+        const img = i-1;
+
+        const petalsArr = Array.from(petals);
+        const petalsArrCopy3 = petalsArr[3];
+        const petalsArrCopy5 = petalsArr[5];
+        
+        petalsArr[3] =petalsArrCopy5;
+        petalsArr[5] = petalsArrCopy3;
+
+        Array.from(petalsArr).forEach((p,idx) => setTimeout(()=>{
+            p.style.backgroundImage= `${bkgImg[img]}`;
+        },idx*2000));
+
         i++;
-        console.log('start interval svg');
     },1000*45);
 }
 

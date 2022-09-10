@@ -34,7 +34,8 @@ ion-icon {
     height: 60rem;
     border-radius: 80px;
     box-shadow: -1rem 20px 10px 0.7px rgb(0 0 0 / 50%);
-    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+    background-image: url("../img/45-degree-fabric-light.png");
+    transition: .5s;
 }
 
 .petal-ins p  {
