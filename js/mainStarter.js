@@ -1,5 +1,6 @@
 import { HeroView } from "./heroView.js";
 import { ColorView} from "./colorView.js";
+import { FlowerView } from "./flowerView.js";
 import * as text from "./textos.js";
 
 
@@ -99,24 +100,35 @@ const setPortfolio = ()=> {
     p.innerHTML = htmlElements.join(' ');
 }
 
+const setFlower = ()=> {
+    
+    const container = document.querySelector('.flower-container');
+
+    FlowerView(container);
+
+
+    const svg =document.querySelector('.container-svg');
+    let i = 1;
+    setInterval(()=>{
+        if (i==3) i=1; 
+        svg.classList.remove(`svg-rotate${i+1}`);
+        svg.classList.add(`svg-rotate${i}`);
+        i++;
+        console.log('start interval svg');
+    },1000*45);
+}
+
 
 setText();
 heroSection();
 setTheme();
 setJobEv();
 setPortfolio();
+setFlower();
 
 
 
-const svg =document.querySelector('.container-svg');
-let i = 1;
-setInterval(()=>{
-    if (i==3) i=1; 
-    svg.classList.remove(`svg-rotate${i+1}`);
-    svg.classList.add(`svg-rotate${i}`);
-    i++;
-    console.log('start interval svg');
-},1000*45)
+
 
 
 

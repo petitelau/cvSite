@@ -13,30 +13,132 @@
     padding: 3rem;
 }
 
+ion-icon {
+    color: #eee;
+    margin-top: 3rem;
+    padding:2rem;
+    border-radius: 50%;
+    border: 4px solid #ccc;
+}
+
 .petal {
     display: flex;
     width: 40rem;
-   
 }
+
+.petal-ins {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    height: 60rem;
+    border-radius: 80px;
+    box-shadow: -1rem 20px 10px 0.7px rgb(0 0 0 / 50%);
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
+
+.petal-ins p  {
+    font-size: 2.5rem;
+    color: #ddd;
+    text-decoration-style: wavy;
+    writing-mode: vertical-rl;
+    max-height: 20rem;
+    max-width: 50rem;
+    padding: 3rem;
+    font-variant: all-petite-caps;
+    height: 30rem;
+}
+
 .petal:nth-child(2) {
     justify-content: end;
     transform: rotate(-50deg) translate(-50px, 70px);
 }
-
-.petal:nth-child(2)::before {
-    content: "";
-    width: 20rem;
-    height: 60rem;
-    background-color: var(--color-base);
-    border-radius: 80px;
-    box-shadow: -1rem 20px 10px 0.7px rgb(0 0 0 / 50%);
-    
+.petal:nth-child(3) {
+    justify-content: center;
+    justify-items: center;
 }
 
+.petal:nth-child(4) {
+    justify-content: start;
+    transform: rotate(50deg) translate(70px, 55px);
+}
+.petal:nth-child(8) {
+    justify-content: end;
+    transform: rotate(230deg) translate(-15rem, 12rem);
+}
+.petal:nth-child(9) {
+    justify-content: center;
+    transform: rotate(180deg) translateY(-20rem);
+    height: 12rem;
+}
 .petal:nth-child(10) {
     justify-content: start;
-    transform: rotate(-50deg) translate(50px, -300px);
+    transform: rotate(-230deg) translate(12rem, 6rem);
 }
+
+.petal:nth-child(2) .petal-ins {
+    background-color: var(--color-base);
+}
+.petal:nth-child(3) .petal-ins {
+    background-color: var(--color-dark);
+}
+.petal:nth-child(4) .petal-ins {
+    background-color: var(--color-mittel);
+}
+.petal:nth-child(8) .petal-ins {
+    background-color: var(--color-dark);
+    height:50rem;
+}
+.petal:nth-child(9) .petal-ins {
+    background-color: var(--color-base);
+}
+.petal:nth-child(10) .petal-ins {
+    background-color: var(--color-dark);
+}
+
+.petal .petal-ins  ion-icon {
+    background-color: var(--color-dark); 
+}
+.petal:nth-child(2) .petal-ins  ion-icon {
+    transform: rotate(50deg); 
+}
+.petal:nth-child(4) .petal-ins  ion-icon {
+    transform: rotate(-50deg); 
+}
+.petal:nth-child(8) .petal-ins  ion-icon {
+    transform: rotate(-50deg); 
+}
+.petal:nth-child(9) .petal-ins  ion-icon {
+    transform: rotate(180deg);
+}
+.petal:nth-child(10) .petal-ins  ion-icon {
+    transform: rotate(230deg);
+}
+
+.petal:nth-child(3) .petal-ins p{ 
+    writing-mode: horizontal-tb;
+}
+.petal:nth-child(4) .petal-ins p{ 
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding-right: 1rem;
+}
+.petal:nth-child(8) .petal-ins p{ 
+   max-height: 25rem;
+   padding-right: 1rem;
+}
+.petal:nth-child(9) .petal-ins p{ 
+    writing-mode: horizontal-tb;
+    transform: rotate(180deg);
+    max-height: 10rem;
+}
+.petal:nth-child(10) .petal-ins p{ 
+    max-height: 25rem;
+    transform: rotate(180deg);
+}
+
+/*
+
 .petal:nth-child(10)::before {
     content: "";
     width: 20rem;
@@ -45,8 +147,49 @@
     border-radius: 80px;
     box-shadow: -1rem 10px 10px 0.7px rgb(0 0 0 / 50%);
 }
+.petal:nth-child(9)::before {
+    content: "";
+    width: 20rem;
+    height: 50rem;
+    background-color: var(--color-base);
+    border-radius: 80px;
+    box-shadow: -1rem 10px 10px 0.7px rgb(0 0 0 / 50%);
+
+}
+.petal:nth-child(8)::before {
+    content: "";
+    width: 20rem;
+    height: 60rem;
+    background-color: var(--color-dark);
+    border-radius: 80px;
+    box-shadow: -1rem 10px 10px 0.7px rgb(0 0 0 / 50%);
+
+}
 
 
+.petal:nth-child(4)::before {
+    content: "";
+    width: 20rem;
+    height: 60rem;
+    background-color: var(--color-mittel);
+    border-radius: 80px;
+    box-shadow: -1rem 20px 10px 0.7px rgb(0 0 0 / 50%);
+
+}
+
+.petal:nth-child(3)::before {
+    content: "";
+    width: 20rem;
+    height: 60rem;
+    background-color: var(--color-dark);
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+    border-radius: 80px;
+    z-index: 1;
+    box-shadow: -1rem 20px 10px 0.7px rgb(0 0 0 / 50%);
+}*/
+
+
+/*flower center for svg */
 .petal:nth-child(6) {
     align-items: center;
     justify-content: center;
@@ -82,61 +225,4 @@ svg {
 text {
     color: #ccc;
     transform: translate(20%,20%);
-}
-
-.petal:nth-child(3) {
-    justify-content: center;
-}
-.petal:nth-child(3)::before {
-    content: "";
-    width: 20rem;
-    height: 60rem;
-    background-color: var(--color-dark);
-    border-radius: 80px;
-    z-index: 1;
-    box-shadow: -1rem 20px 10px 0.7px rgb(0 0 0 / 50%);
-}
-
-.petal:nth-child(4) {
-    justify-content: start;
-    transform: rotate(50deg) translate(70px, 55px);
-}
-
-.petal:nth-child(4)::before {
-    content: "";
-    width: 20rem;
-    height: 60rem;
-    background-color: var(--color-mittel);
-    border-radius: 80px;
-    box-shadow: -1rem 20px 10px 0.7px rgb(0 0 0 / 50%);
-
-}
-
-.petal:nth-child(9) {
-    justify-content: center;
-    transform: translateY(-20rem);
-}
-.petal:nth-child(9)::before {
-    content: "";
-    width: 20rem;
-    height: 50rem;
-    background-color: var(--color-base);
-    border-radius: 80px;
-    box-shadow: -1rem 10px 10px 0.7px rgb(0 0 0 / 50%);
-
-}
-.petal:nth-child(8) {
-    justify-content: end;
-    transform: rotate(50deg) translate(-55px, -40rem);
-
-}
-
-.petal:nth-child(8)::before {
-    content: "";
-    width: 20rem;
-    height: 60rem;
-    background-color: var(--color-dark);
-    border-radius: 80px;
-    box-shadow: -1rem 10px 10px 0.7px rgb(0 0 0 / 50%);
-
 }
