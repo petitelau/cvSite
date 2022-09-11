@@ -106,7 +106,7 @@ const setFlower = ()=> {
 
     FlowerView(container);
     const petals = document.querySelectorAll('.petal-ins');
-    const bkgImg = ["none","url('../img/45-degree-fabric-light.png')"];
+    const bkgImg = ["texture","no-texture","texture"];
 
     const svg =document.querySelector('.container-svg');
     let i = 1;
@@ -117,6 +117,7 @@ const setFlower = ()=> {
        
         console.log('start interval svg' + i);
         const img = i-1;
+        const imgR = i;
 
         const petalsArr = Array.from(petals);
         const petalsArrCopy3 = petalsArr[3];
@@ -126,11 +127,13 @@ const setFlower = ()=> {
         petalsArr[5] = petalsArrCopy3;
 
         Array.from(petalsArr).forEach((p,idx) => setTimeout(()=>{
-            p.style.backgroundImage= `${bkgImg[img]}`;
+            p.classList.remove(`${bkgImg[imgR]}`);
+            p.classList.add(`${bkgImg[img]}`);
         },idx*2000));
 
         i++;
     },1000*45);
+
 }
 
 
