@@ -11,6 +11,9 @@
     html {
         font-size: 50%;
     }
+    #bar-left {
+        opacity:0;
+    }
     .jobs-container:after {
         content: '';
         position: absolute;
@@ -35,8 +38,8 @@
         display:none;
         
     }
-    .hero-row{
-        height: 60vh;
+    .hero-row1{
+        height: 50vh;
     }
     .card-container{
         margin: 20rem -20rem 0rem 5rem;
