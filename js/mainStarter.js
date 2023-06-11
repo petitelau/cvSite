@@ -51,7 +51,6 @@ const heroSection = ()=> {
         window.open('mailto:laura.gomez.2008@gmail.com');
     }
 
-    
 
     const container = document.querySelector('.canvas-container');
     const canvas = document.getElementById('hero-canvas');
@@ -129,7 +128,7 @@ const setFlower = ()=> {
         Array.from(petalsArr).forEach((p,idx) => setTimeout(()=>{
             p.classList.remove(`${bkgImg[imgR]}`);
             p.classList.add(`${bkgImg[img]}`);
-        },idx*2000));
+        },idx*1000));
 
         i++;
     },1000*45);

@@ -9,7 +9,7 @@ const FlowerView = (containerEl)=> {
                     {petalVisible: false, svg:false},
                     {petalVisible: false, svg:true},
                     {petalVisible: false, svg:false},
-                    {petalVisible: true, icon: "globe-outline", msg:"Have worked on 4 different countries"},
+                    {petalVisible: true, icon: "globe-outline", msg:"I Have worked on 4 different countries"},
                     {petalVisible: true, icon: "bicycle-outline", msg:"Biking and enjoy lanscape"},
                     {petalVisible: true, icon: "mic-outline", msg:"Fluent on Spanish,English,French and good german"}
                  ]
