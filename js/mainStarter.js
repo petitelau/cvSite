@@ -1,4 +1,4 @@
-import { HeroView } from "./heroView.js";
+import { HeroView } from "./heroView2.js";
 import { ColorView} from "./colorView.js";
 import { FlowerView } from "./flowerView.js";
 import * as text from "./textos.js";
@@ -43,19 +43,8 @@ const setTheme= () => {
 
 const heroSection = ()=> {
 
-    document.querySelector('.hero-button1').onclick = ()=> {
-        window.open('img/cv2022_5.pdf');
-    }
-
-    document.querySelector('.hero-button2').onclick = ()=> {
-        window.open('mailto:laura.gomez.2008@gmail.com');
-    }
-
-
-    const container = document.querySelector('.canvas-container');
-    const canvas = document.getElementById('hero-canvas');
-    
-    HeroView(canvas, container);
+    const heroContainer = document.querySelector('.hero-container'); 
+    HeroView(heroContainer);
     
 }
 
@@ -136,8 +125,9 @@ const setFlower = ()=> {
 }
 
 
-setText();
+
 heroSection();
+setText();
 setTheme();
 setJobEv();
 setPortfolio();

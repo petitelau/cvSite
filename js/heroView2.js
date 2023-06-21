@@ -5,9 +5,12 @@ export {HeroView}
 
 const HeroView = (heroContainer ) => {
 
+    const back = document.createElement("DIV");
+    back.classList.add("background-hero");
+
     //row 1
     const heroRow1= document.createElement("DIV");
-    heroRow1.classList.add('hero-row1');
+    heroRow1.classList.add('hero-1row');
     const cardContainer = document.createElement("DIV");
     cardContainer.classList.add("card-container");
     const myName =document.createElement("P");
@@ -16,39 +19,41 @@ const HeroView = (heroContainer ) => {
     middleName.classList.add("middle-msg");
     const heroMsg = document.createElement("P");
     heroMsg.classList.add("hero-msg");
+
+
     cardContainer.appendChild(myName);
     cardContainer.appendChild(middleName);
     cardContainer.appendChild(heroMsg);
     heroRow1.appendChild(cardContainer);
+
+    heroContainer.appendChild(back);
+    back.appendChild(heroRow1);
+
+
+     //row2
+     const heroButtons= document.createElement("DIV");
+     heroButtons.classList.add('hero-buttons');
+     const heroButton1 = document.createElement("BUTTON");
+     heroButton1.classList.add("hero-1button");
+     const button1Inside =document.createElement("DIV");
+     button1Inside.classList.add("hero-button-inside");
+     const heroButton2 =document.createElement("BUTTON");
+     heroButton2.classList.add("hero-2button");
+     const button2Inside = document.createElement("DIV");
+     button2Inside.classList.add("hero-button2-inside");
+
+
+     heroButton1.appendChild(button1Inside);
+     heroButton2.appendChild(button2Inside);
+     heroButtons.appendChild(heroButton1);
+     heroButtons.appendChild(heroButton2);
+
+     heroRow1.appendChild(heroButtons);
+
+       // row3 
+    const heroRow3= document.createElement("DIV");
+    heroRow3.classList.add('hero-row3');
     
-    //row2
-    const heroRow2= document.createElement("DIV");
-    heroRow2.classList.add('hero-row2');
-    const heroButton1 = document.createElement("BUTTON");
-    heroButton1.classList.add("hero-button1");
-    const button1Inside =document.createElement("DIV");
-    button1Inside.classList.add("hero-button-inside");
-    const heroButton2 =document.createElement("BUTTON");
-    heroButton2.classList.add("hero-button2");
-    const button2Inside = document.createElement("DIV");
-    button2Inside.classList.add("hero-button2-inside");
-    heroButton1.appendChild(button1Inside);
-    heroButton2.appendChild(button2Inside);
-    heroRow2.appendChild(heroButton1);
-    heroRow2.appendChild(heroButton2);
-
-
-    // row3 rightContainer
-    const rightContainer= document.createElement("DIV");
-    rightContainer.classList.add('right-container');
-    const barsContainer = document.createElement("DIV");
-    barsContainer.classList.add("bars-container");
-    const barLeft =document.createElement("DIV");
-    barLeft.classList.add("bars");
-    barLeft.setAttribute("id", "bar-left")
-    const barRight =document.createElement("DIV");
-    barRight.classList.add("bars");
-    barRight.setAttribute("id", "bar-right");
     const canvasContainer = document.createElement("DIV");
     canvasContainer.classList.add("canvas-container");
     const canvas = document.createElement("CANVAS");
@@ -57,27 +62,12 @@ const HeroView = (heroContainer ) => {
     canvas.setAttribute("height", "750");
 
     canvasContainer.appendChild(canvas);
-    barsContainer.appendChild(barLeft);
-    barsContainer.appendChild(barRight);
-    rightContainer.appendChild(barsContainer);
-    rightContainer.appendChild(canvasContainer);
 
-   
-    heroRow1.appendChild(heroRow2);
-    heroRow1.appendChild(rightContainer);
+    heroRow3.appendChild(canvasContainer);
 
-    heroContainer.appendChild(heroRow1);
+    back.appendChild(heroRow3);
 
 
-    heroButton1.onclick = ()=> {
-        window.open('img/cv2022_5.pdf');
-    }
-
-    heroButton2.onclick = ()=> {
-        window.open('mailto:laura.gomez.2008@gmail.com');
-    }
-
- 
 
 
     let IMAGE_LOGO;
@@ -171,5 +161,6 @@ const HeroView = (heroContainer ) => {
         console.log('draw');
         drawMe();
     }, 1000*60*1.2)
+
 
 }

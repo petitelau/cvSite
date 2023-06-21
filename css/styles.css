@@ -27,6 +27,7 @@ body{
     --violet-mittel: hsl(25, 82%, 20%);
     --violet-dark: hsl(25, 83%, 14%);
     --green-light: #9cc891;
+    width: 100vw;
 }
 
 .hero-container {
@@ -171,7 +172,7 @@ box-shadow: -1px 20px 10px 0.7px rgb(0 0 0 / 50%);
 .canvas-container {
     display:flex;
     background: #222;
-    min-width:75rem;
+    width:75rem;
     height:75rem;
     margin-left: -5rem;
     clip-path: polygon(0 0, 100% 100%, 100% 0);

@@ -1,0 +1,45 @@
+.background-hero{
+    background-image: linear-gradient(45deg, transparent 60%
+    ,#333, #eee, #777,#eee,#666,#333,#eee,#777,#eee,#666 );
+    height: 75rem;
+}
+
+.hero-1row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    overflow: hidden;
+    margin-top: -5rem;
+}
+
+.hero-row3 {
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+}   
+
+.hero-buttons{
+    display: flex;
+    justify-content: left;
+}
+
+.hero-1button {
+    border-radius: 50%;
+    margin: 5rem;
+    width: 12rem;
+    height: 12rem;
+    left: 25rem;
+    background-image: 
+    url(../img/light-aluminum.png), 
+    linear-gradient(to left,#333,#eee,#777,#eee, #666);
+}
+
+.hero-2button {
+    border-radius: 50%;
+    margin: 5rem;
+    left: 40rem;
+    width: 12rem;
+    height: 12rem;
+    background-image: url(../img/light-aluminum.png), linear-gradient(to left,#333,#eee,#777,#eee, #666);
+}
