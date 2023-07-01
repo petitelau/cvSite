@@ -13,14 +13,14 @@ const fetchFn = ( wsId, question, callback) => {
         "wsId": wsId,
         "range": "50"
     }
-    fetch('http://localhost:3500/chatBot',
-    //fetch('https://website-chat-app-3132c6ef0388.herokuapp.com/chatBot',
+    //fetch('http://localhost:3500/chatBot',
+    fetch('https://website-chat-app-3132c6ef0388.herokuapp.com/chatBot',
         {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Origin" : "http://127.0.0.1:5500"
-               // "Origin":"https://testchatbot-laura.web.app"
+               // "Origin" : "http://127.0.0.1:5500"
+                "Origin":"https://cvsite-laura.web.app/"
             },
             body: JSON.stringify(val)
         }

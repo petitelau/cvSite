@@ -33,7 +33,7 @@ const setHtml = (rootElement)=> {
     const msg = document.createElement("P");
     msg.classList.add("chatbox--loading-msg");
 
-    msg.innerText ="ask me";
+    msg.innerText ="Hello, what would you like to know ? ask me !";
     chatbox.appendChild(msg);
     insideCont.appendChild(chatbox);
     formEl.appendChild(dbBox);
