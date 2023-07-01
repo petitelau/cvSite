@@ -1,0 +1,22 @@
+{
+  "name": "cvsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass chat/scss/main.scss chat/css/chat.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petitelau/cvSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petitelau/cvSite/issues"
+  },
+  "homepage": "https://github.com/petitelau/cvSite#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

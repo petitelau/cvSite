@@ -1,0 +1,220 @@
+$color-back:  hsl(210, 62%, 35%);
+$color-gray: #e5e5e6;
+$color-black: #000;
+$color-backCont1 : rgba(0, 0, 0, 0.8);
+$color-backCont2 : rgba(0, 0, 0, 0.99);
+
+
+*,
+*::after,
+*::before {
+  margin:0;
+  padding: 0;
+  box-sizing: inherit;
+}
+/*
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: lighten($color-back, 70%);
+  padding: 3rem;
+  box-sizing: border-box;
+  
+}
+*/
+.initBox {
+  background: linear-gradient(to left,#555,#eee,#eee, #777); 
+  background-color: #fff;
+  position: fixed;
+  top: 70%;
+  left: 0;
+  height: 8rem;
+  width: 6.5rem;
+  transition: 0.5s;
+  box-shadow: 0rem 1rem 2rem rgba(0,0,0,.8);
+  border: 1px solid black;
+  border-radius: 3px;
+  display:flex;
+  z-index: 9999;
+
+  &:hover {
+    width: 12rem;
+    cursor: pointer;
+  }
+
+  &__box1 {
+    width: 6rem;
+    height: inherit;
+    display: flex;
+    background-image: url('../img/head.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 80%;
+ 
+  }
+  &__box2 {
+    height: inherit;
+    width: 0rem;
+    background-image: url('../img/chatgpt-logo.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    opacity: 0.6;
+    transition: 0.7s;
+  }
+
+  &:hover &__box1 {
+    transform: rotate(-5deg);
+  }
+  &:hover &__box2 {
+    width: 6rem;
+    transform: rotate(-300deg);
+  }
+  
+}
+.bk-cont-hidden {
+  position: fixed;
+  top:70%;
+  left:0%;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at 100%, 
+  $color-backCont1, $color-backCont2);
+  z-index: 0;
+  transition: .6s;
+}
+.bk-cont-visible {
+  transform:translate(80rem, 50rem) scale(200);
+  top: 0%;
+}
+
+form.outside-container-visible {
+  top: 15vh;
+  left: 50%;
+  transform: scale(1.2) translateX(-50%);
+  transition: .4s;
+
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: lighten($color-back, 70%);
+}
+
+.outside-container {
+  background-color: $color-back;
+  background-image:url("../img/black-orchid.png");
+  padding: 3rem;
+  max-height: 70vh;
+  position: fixed;
+  width: 60rem;
+  border-radius: 3%;
+  top: 70%;
+  left: 0;
+  transform: translate(-51%,-30%) scale(0.1,.3);
+  transition: .4s;
+
+
+  .db-box {
+    display: flex;
+    justify-content: end;
+
+    &__db {
+      width: 25%;
+      height: 3rem;
+      margin: 0rem 0rem 0rem 2rem;
+      padding: 1rem;
+      color: darken($color-back, 30%);
+      &--logo {
+        margin-bottom: 1.7rem;
+      }
+    }
+
+  }
+  .inside-container {
+   
+    background: linear-gradient(to top right,#333,#eee,#777,#eee, #666);
+    padding: 3rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.8);
+
+    .chatbox {
+      list-style-type: none;
+      display:grid;
+      grid-template-columns: 1fr;
+      overflow:scroll;
+      max-height: 40rem;
+      position: relative;
+      font-size: 1.85rem;
+
+      &--loading-msg {
+        background: linear-gradient(to left,#333,#777, #666);
+        background-image: url("../img/light-aluminum.png"); 
+        background-color: #777;
+        height: 4rem;
+        width:100%;
+        position: sticky;
+        top: 0%;
+        color: $color-gray;
+        text-align: center;
+        padding: 0.5rem;
+      }
+  
+
+      li:nth-child(even){
+        background: lighten($color-back,20%);
+        background-image:url("../img/black-orchid.png");
+        padding: 1rem;
+        border: 2px dashed darken($color-back, 10%);
+      }
+      li:nth-child(odd){
+        background: lighten($color-back, 5%);
+        background-image:url("../img/black-orchid.png");
+        padding: 1rem;
+        display:table;
+        & img {
+          transform: scale(0.7);
+          display:table-cell;
+          vertical-align: middle;
+        }
+        & span {
+          text-align: end;
+          width:100%;
+          display:table-cell;
+          vertical-align: middle;
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+  .question-box {
+    padding: 3rem 0 1rem 0;
+    display: flex;
+    justify-content: end;
+    &__input {
+      width: 90%;
+      height: 3rem;
+      padding: 1rem;
+      font-size: 1.6rem;
+      color: $color-back;
+    }
+    &__btn {
+      width: 10%;
+      height: 3rem;
+      background-color: $color-back;
+      background-image:url("../img/black-orchid.png");
+      color: #eee;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+
+
+

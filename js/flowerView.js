@@ -36,6 +36,7 @@ const FlowerView = (containerEl)=> {
                 </text>
             </svg>`;
             petal.appendChild(svg);
+            petal.classList.add("z-idx");
         }
         containerEl.appendChild(petal);
     }
