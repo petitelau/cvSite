@@ -1,7 +1,7 @@
 export const IMAGE_ME1= "img/me.png"
 export const IMAGE_ME2= "img/me2.png"
 
-export const IMAGE_ME3= "img/me3.png"
+export const IMAGE_ME3= "img/me_2px.png"
 
 export const imageLogo = [
     "./img/react-logo.png",

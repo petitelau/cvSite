@@ -92,6 +92,7 @@ body {
 .bk-cont-visible {
   transform:translate(80rem, 50rem) scale(200);
   top: 0%;
+  pointer-events: none;
 }
 
 form.outside-container-visible {
