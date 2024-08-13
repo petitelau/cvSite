@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 38.5rem 38.5rem 35rem;
     grid-template-rows: 8rem 25rem 25rem;
-    height: 120rem;
+    height: 160rem;
     justify-content: center;
     align-content: center;
     background-color: #eee;
@@ -98,10 +98,8 @@
 
 .jobs-container:after {
     content: '';
-    position: absolute;
-    top: 20rem;
-    right: 45rem;
-    width: 55rem;
+    left: 15rem;
+    width: 45rem;
     height: 0.2rem;
     background-color: #555;
     background-image:  url("../img/dark-mosaic.png");

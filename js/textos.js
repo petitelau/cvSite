@@ -18,6 +18,25 @@ export const diploma3 =`
 <p>ITESM Mexico (Bacherlor degree)</p>
 <p>December 1994</p>`;
 
+export const job0 =`VASS
+I've work most of my projects with Adobe Experience Manager. AEM is a complex software with a vast set of features. 
+My work consisting on understanding the architecture and providing solutions  to create highly personalized experiences and content for the company web sites.
+<span class="desc-paragraph blur-paragraph"> 
+  More... 
+</span>
+AEM is built on java using frameworks and technology such as sling, osgi, JCR. Working mostly as a backend developer and technical lead on projects.
+Some of the tasks include:
+- Support on pre sales activities
+- Develop an in-depth understanding of the client’s business and technical environment and translate it into viable solutions
+- Migration from Adobe Manage Services to AEM
+- Work on AEM on premises and AEM cloud
+
+I've also participate on others projects outside AEM such as:
+
+-AWS spring boot service to create WALLETS for apple and android
+-Open AI api to create a chat for specific content.
+
+`
 
 export const job1 =`
 DHL EXPRESS 

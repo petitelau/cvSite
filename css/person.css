@@ -140,7 +140,7 @@ ion-icon {
 .petal:nth-child(9) .petal-ins p{ 
     writing-mode: horizontal-tb;
     transform: rotate(180deg);
-    max-height: 10rem;
+    max-height: 13rem;
 }
 .petal:nth-child(10) .petal-ins p{ 
     max-height: 25rem;
